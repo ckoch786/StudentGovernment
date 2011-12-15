@@ -1,0 +1,115 @@
+
+<html>
+<!-- http://www.elated.com/articles/styling-tables-with-css/ -->
+<head>
+                <title>Alternation Table</title>
+<style type="text/css">
+
+.pretty-table
+{
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border: 1px solid #333;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #000;
+  background: #bcd0e4 url("widget-table-bg.jpg") top left repeat-x;
+}
+
+.pretty-table caption
+{
+  caption-side: bottom;
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  padding: 0.5em 0;
+}
+
+.pretty-table th, .pretty-table td
+{
+  border: 1px dotted #666;
+  padding: 0.5em;
+  text-align: left;
+  color: #632a39;
+}
+
+.pretty-table th[scope=col]
+{
+  color: #000;
+  background-color: #8fadcc;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+.pretty-table th+th[scope=col]
+{
+  color: #fff;
+  background-color: #7d98b3;
+  border-right: 1px dotted #666;
+}
+
+.pretty-table th[scope=row]
+{
+  background-color: #b8cfe5;
+  border-right: 2px solid #333;
+}
+
+.pretty-table tr.alt th, .pretty-table tr.alt td
+{
+  color: #2a4763;
+}
+
+.pretty-table tr:hover th[scope=row], .pretty-table tr:hover td
+{
+  background-color: #632a2a;
+  color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+<table class="pretty-table" summary="This table shows the sales figures for the four products in the Widget product line in 2007. The figures are broken down by quarter.">
+  <caption>Widget sales figures, 2007</caption>
+  <tr>
+    <th scope="col">Product</th>
+    <th scope="col">1st quarter</th>
+    <th scope="col">2nd quarter</th>
+    <th scope="col">3rd quarter</th>
+    <th scope="col">4th quarter</th>
+  </tr>
+  <tr>
+    <th scope="row">SupaWidget</th>
+    <td>$9,940</td>
+    <td>$10,100</td>
+    <td>$9,490</td>
+    <td>$11,730</td>
+  </tr>
+  <tr class="alt">
+    <th scope="row">WonderWidget</th>
+    <td>$19,310</td>
+    <td>$21,140</td>
+    <td>$20,560</td>
+    <td>$22,590</td>
+  </tr>
+  <tr>
+    <th scope="row">MegaWidget</th>
+    <td>$25,110</td>
+    <td>$26,260</td>
+    <td>$25,210</td>
+    <td>$28,370</td>
+  </tr>
+  <tr class="alt">
+    <th scope="row">HyperWidget</th>
+    <td>$27,650</td>
+    <td>$24,550</td>
+    <td>$30,040</td>
+    <td>$31,980</td>
+  </tr>
+</table>
+
+</body>
+</html>

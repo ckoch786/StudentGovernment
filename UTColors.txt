@@ -1,0 +1,2 @@
+Gold = f9cc0d
+Blue =202d64
