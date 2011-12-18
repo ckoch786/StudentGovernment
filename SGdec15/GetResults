@@ -1,0 +1,1 @@
+sed -n '/Search Results/,/Try another search/p' SearchResults

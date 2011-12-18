@@ -1,0 +1,7 @@
+
+
+LastName="Rubin"
+FirstName="Matt"
+
+
+links http://www.utoledo.edu/eDirectory/StudentDirectoryResults.asp?searchType=stumain&hidPage=0&txtLastName=$LastName&txtFirstName=$FirstName&txtDept=&btnSubmit=Submit >> SearchResults
