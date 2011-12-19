@@ -1,0 +1,4 @@
+grep -E [0-9]-  ablutionreolution4002.txt
+grep "Author"  ablutionreolution4002.txt
+grep "Read"  ablutionreolution4002.txt
+grep "Passed" ablutionreolution4002.txt
