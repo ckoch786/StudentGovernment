@@ -1,0 +1,9 @@
+s/<table.*>/<ul>/g
+s/<tbody>//g
+s/<\/tbody>//g
+s/<td.*>/<li>/g
+s/<\/td>/<\/li>/g
+s/<tr>//g
+s/<\/tr>//g
+s/<\/table>/<\/ul>/g
+

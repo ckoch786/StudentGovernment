@@ -1,0 +1,23 @@
+\t\t\t\t /?Resolution?/ \d\d\d\d\-[A-Z]-\d\d\d\d\d\d  || /A Bill/
+?-/A Resolution to ...?/|| /A Bill/
+\s
+\s?
+/Author:/
+\s
+/?Sponsor:?/
+\s
+/*paragraphs of unneeded info*/
+\s
+/Read/ \d\d/\\d\d/\\d\d\/\d\d ?,? \d\d/\\d\d/\\d\d\/\d\d
+\s?
+/?Passed?/ \d\d/\\d\d/\\d\d\/\d\d /?Emergency?/
+
+\d\d\d\d\-[A-Z]-\d\d\d\d\d\d
+
+
+
+
+//Legislation looked over for formating issues.
+generalfeelogoreolution
+SGLegislationSGWeek
+ablution

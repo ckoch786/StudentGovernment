@@ -1,0 +1,9 @@
+/\d\d\d\d\-[A-Z]-\d\d\d\d\d\d/
+/-/,/\.$/ 
+/Event:/
+/Author/
+/Sponsor/
+
+/Read/
+/Passed/
+/Emergency/
