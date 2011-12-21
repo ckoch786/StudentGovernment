@@ -1,6 +1,7 @@
 ablutionreolution4002.txt
 ablutionreolution4002x.txt
 adhoccommoffice6006.txt
+awkscr
 BigEvent20125013.txt
 BookandAcceCodeReolution1001.txt
 bylaw20112012.txt
@@ -20,6 +21,7 @@ RedBoxlegilation7010.txt
 Reolution1005.txt
 Reolution4003uatodayreaderhip.txt
 Reolution4011.txt
+sedscr
 SGLegilationSGWeek7009.txt
 SmokingBanReolution4008.txt
 StandingRule.txt

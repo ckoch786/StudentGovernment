@@ -1,26 +1,22 @@
 #!/bin/sh
-Path=/home/terah/StudentGovernment/TEMP
+Path=/home/terah/StudentGovernment/TEMPFILES
 link="Legislation"
-Path2=/home/terah/StudentGovernment/textFiles/
+Path2=/home/terah/StudentGovernment/TEMPFILES/textFiles/
 #ls /home/terah/StudentGovernment/SGdec15 > /home/terah/StudentGovernment/TEMP/fileNames.txt 
-ls /home/terah/StudentGovernment/textFiles > /home/terah/StudentGovernment/TEMP/textFiles.txt
+ls /home/terah/StudentGovernment/TEMPFILES/textFiles > /home/terah/StudentGovernment/TEMPFILES/textFiles.txt
 
 #FOR TESTING PURPOSES
 echo "
-<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
-
-<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">
+<html>
 <head>
-<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />
-
         <title>Legislation 2010</title>
 	
-	<script type=\"text/javascript\" src=\"/home/terah/StudentGovernment/sorttable.js\"></script>
-	<script type=\"text/javascript\">
+	<script type="text/javascript" src="/home/terah/StudentGovernment/sorttable.js"></script>
+	<script type="text/javascript">
 	<!--
 	SrtTBL();
 	//--></script>
-	<style type =\"text/css\">
+	<style type ="text/css">
 	/* Sortable tables */
 	table.sortable thead {
 	        background-color:#eee;
@@ -68,19 +64,20 @@ echo "
 cat $Path/textFiles.txt | while read textFL; do
    
    filenm=$textFL
-   title=$(grep -E [0-9]-  $Path2$textFL)
-   readON=$(grep "Read" $Path2$textFL)
-   passed=$(grep "Passed" $Path2$textFL)
-   author=$(grep "Author"  $Path2$textFL)
-   sponsor=$( grep "Sponsors" $Path2$textFL)
-   summary=$(echo $(grep -A 3 "resolution" $Path2$textFL) | sed -n '1,/^[A-Z]/p')
+   title=$(sed -n '/[0-9][0-9][0-9][0-9]-[A-Z]-[0-9][0-9][0-9][0-9][0-9]/p' $Path2$textFL)
+   readON=$(sed -n '/Read/p' $Path2$textFL)
+   passed=$(sed -n '/Passed/p' $Path2$textFL)||$(sed -n '/Emergency/p' $Path2$textFL)   
+   author=$(sed -n '/Author/p' $Path2$textFL)
+   sponsor=$(sed -n '/Sponsor/p' $Path2$textFL)
+  # summary=$(echo $(grep -A 5 "resolution" $Path2$textFL) | sed -n '1,/^[A-Z]/p')
+   summary=$(grep -A 3 "An act" $Path2$textFL|| grep -A 3 "Event" $Path2$textFL|| grep -A 3 "A procedural motion" $Path2$textFL|| grep -A 3 "A Bill " $Path2$textFL) 
    echo "generating site code for "$fileNM " and " $textFL
 
 
 echo  "<tr>
-<td style=\"vertical-align: top;width: 184px\" id=\"resAmends\"><a href=\"/$link/$filenm\">$title</a><br>
+<td style=\"vertical-align: top;width: 184px\"id=\"resAmends\"><a href=\"/$link/$filenm\">$title</a><br>
    </td>
-      <td style=\"vertical-align: top;width: 123px\" id=\"datesOfLeg\">$readON <br />
+      <td style=\"vertical-align: top;width: 123px\"id=\"datesOfLeg\">$readON <br />
                          $passed</br>
    </td>
    <td style=\"vertical-align: top;width: 547px\"id=\"snypopsis\">$summary
