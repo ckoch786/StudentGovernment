@@ -1,0 +1,7 @@
+
+--How to take a detailed search output from grep and use is to perform
+  operations with sed.
+
+  delete=$(grep -A 9 -B 3 "Passed 01.11.11" LegislationS47.html)
+  sed '/$delete/d' LegislationS47.html >> LegislationS47Test.html 
+
