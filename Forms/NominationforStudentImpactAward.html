@@ -1,0 +1,114 @@
+Nomination for Student Impact Award
+
+<p style="font-size: 16px; font-weight: bold; color: #0000A0;">Nominator Information (you)</p>
+
+<p>First Name<span style="color: #FF0000;">*</span><br />
+    [text* first-name] </p>
+
+<p>Last Name<span style="color: #FF0000;">*</span><br />
+    [text* last-name] </p>
+
+<p>Rocket Number<span style="color: #FF0000;">*</span><br />
+    [text* rocket-number] </p>
+
+<p>I am a...<span style="color: #FF0000;">*</span>
+[select* Iama include_blank "Freshman" "Sophomore" "Junior" "Senior" "Graduate Student"]</p>
+
+<p>Expected Graduation Year<br />
+    [text grad-year]</p>
+
+<p>Major<br />
+    [text major]</p>
+
+<p>Minor<br />
+    [text minor]</p>
+
+<p>Telephone Number<span style="color: #FF0000;">*</span><br />
+    [text* telephone-number]</p>
+
+<p>Email Address<span style="color: #FF0000;">*</span>
+    [email* nominator-email]</p>
+
+<p></p>
+
+<p style="font-size: 16px; font-weight: bold; color: #0000A0;">Nominee Information</p>
+
+<p>I nominate: (Please include first and last name of nominee)<span style="color: #FF0000;">*</span><br />
+     [text nominee-name]</p>
+
+<p>This person is a faculty member in the college of:<span style="color: #FF0000;">*</span>
+[select* nominee-college include_blank "Adult and Lifelong Learning" "Business and Innovation" "Education" "Engineering" "Gateway Programs" "Graduate Studies" "Health Science and Human Services" "Honors" "Language, Literature and Social Science" "Law" "Medicine and Life Sciences" "Natural Science and Mathematics" "Nursing" "Online Learning" "Pharmacy" "Visual and Performing Arts"]</p>
+
+<p>The class I had this teacher/professor in or circumstances in which I was assisted (advising, research, etc): (do not abbreviate or use course numbers)<span style="color: #FF0000;">*</span><br />
+    [textarea* prof-class]</p>
+
+<p><span style="font-size: 16px; font-weight: bold; color: #0000A0;">Questions</span><br />
+Please type your responses to the following questions and be as detailed as possible (be sure to include written examples of how this teacher/professor/staff member has influenced you) 
+</p>
+
+<p>How has this faculty member demonstrated his/her commitment to University of Toledo students?<span style="color: #FF0000;">*</span><br />
+[textarea* faculty-commitment]</p>
+
+<p>How has this faculty member demonstrated excellence in teaching? <span style="color: #FF0000;">*</span><br />
+[textarea* faculty-teaching-excellence]</p>
+
+<p>What distinguishes this faculty member from others? <span style="color: #FF0000;">*</span><br />
+[textarea* faculty-distinguisher]</p>
+
+<p>Describe the faculty member’s actions that have positively impacted your life or college experience <span style="color: #FF0000;">*</span><br />
+[textarea* faculty-actions]</p>
+
+<b><p>Please check your information carefully for accuracy, and then click Submit.</p></b>
+
+<p>[submit "Submit my nomination"]</p>
+
+
+
+<!--For email script-->
+From: [first-name][last-name] <[nominator-email]>
+Subject: Nomination for Student Impact Award
+
+Student Rocket Number:
+[rocket-number]
+
+Student year:
+[Iama]
+
+Grad Year:
+[grad-year]
+
+Major:
+[major]
+
+Minor:
+[minor]
+
+Nominator Telephone Number:
+[telephone-number]
+
+NOMINEE INFORMATION
+
+Nominee Name:
+[nominee-name]
+
+Nominee College:
+[nominee-college]
+
+The class I had this teacher/professor in or circumstances in which I was assisted (advising, research, etc):
+[prof-class]
+
+How has this faculty member demonstrated his/her commitment to University of Toledo students?
+[faculty-commitment]
+
+How has this faculty member demonstrated excellence in teaching?
+[faculty-teaching-excellence]
+
+What distinguishes this faculty member from others? 
+[faculty-distinguisher]
+
+Describe the faculty member’s actions that have positively impacted your life or college experience
+[faculty-actions]
+
+--
+This mail is sent via nomination form on Student Government Website http://wordpress.utoledo.edu/sg
+<!--END email script-->

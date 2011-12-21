@@ -1,0 +1,2 @@
+/(January|February|March|April|May|June|July|April|September|October|November|December)\s[0-9]{2}[a-z]{2}+,\s{1}[0-9]{4}$/p 
+
