@@ -1,0 +1,77 @@
+\input texinfo @c -*-texinfo-*-
+@c %**start of header
+@setfilename SGWebSite.info
+@settitle Student Government Web Site Manual version 1
+@c %**end of header
+
+@copying
+This manual is for program, version version.
+
+Copyright @copyright{} 2012 Cory Koch.
+
+@quotation
+Permission is granted to ...
+@end quotation
+@end copying
+
+@titlepage
+@title Student Goverment Web Site Manual
+@subtitle subtitle-if-any
+@subtitle second-subtitle
+@author Cory Koch
+
+@c The following two commands
+@c start the copyright page.
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+Published by ...
+@end titlepage
+
+@c So the toc is printed at the start.
+@contents
+
+@ifnottex
+@node Top
+@top title
+
+This manual is for The Student Government website and the suite of programs, version 1.0.
+@end ifnottex
+
+@menu
+* First Chapter:: Getting started ...
+@c * Second Chapter:: ...
+...
+@c * Copying:: Your rights and freedoms.
+@end menu
+
+@node First Chapter
+@chapter First Chapter
+
+@cindex first chapter
+@cin
+@cindex chapter, first
+Hello World!
+
+@bye
+
+
+@c Brain storming-------
+
+@c Chapters
+@c Logging in 
+@c Updating the Main page
+@c Updating the side navigation bar 
+@c Creating forms
+@c Generating Meeting minutes
+@c    Cabinet
+@c    Senate
+@c    Steering
+@c Generating Legislation
+@c   removing illegal characters
+@c   converting files to .pdf and .txt for processing
+@c Adding files to the wordpress
+@c HTML basics
+@c Checking links the smart way
+@c Extracting images and text from pdf files
+@c Links
